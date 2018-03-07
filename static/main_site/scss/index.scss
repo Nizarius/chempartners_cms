@@ -1,0 +1,71 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button, input, ul {
+    font-family:  'Montserrat', 'Roboto Condensed',  Verdana, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    text-decoration: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 1px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.5em;
+    font-weight: 300;
+}
+
+div,
+body, section, form, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  //overflow-x: hidden;
+}
+
+.barba-container {
+  position: relative;
+  overflow: hidden;
+}
+
+@import 'constants';
+@import 'components/grid';
+@import 'components/main_styles';
+
+// компоненты
+@import 'components/buttons';
+@import 'components/decoration_elements';
+
+// шаблон
+@import 'template_parts/top_navigation';
+@import 'template_parts/footer';
+@import 'template_parts/overlay_menu';
+@import 'template_parts/overlay_screen';
+@import 'template_parts/main_form';
+@import 'template_parts/cursor';
+
+@import 'pages/index_page';
+
+@import 'pages/content_pages/logistics';
+@import 'pages/content_pages/products'; 

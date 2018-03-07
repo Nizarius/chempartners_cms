@@ -1,0 +1,247 @@
+.content-section-1 {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .x-heading {
+    //transform: translateX(-40px);
+    font-size: 42px;
+  }
+
+  .x-description {
+    //transform: translateX(-40px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .x-main-button {
+    margin-top: 20px;
+  }
+
+  .c-background-triangle {
+    position: absolute;
+    left: -200px;
+    bottom: -100px;
+    transform: rotate(45deg);
+  }
+
+}
+
+
+.c-first-image {
+  position: absolute;
+  left: 0%;
+  top: 20vh;
+  width: calc(45% + 100px);
+  height: 15vh;
+}
+
+.c-first-image--fill {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #fff;
+  z-index: 1;
+}
+
+.c-first-image--background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../assets/img/backgrounds/port-1.jpg);
+
+  &.background-1 {
+    background-image: url("../assets/img/backgrounds/shanghai-1.jpg");
+  }
+
+  &.background-2 {
+    background-image: url("../assets/img/backgrounds/shanghai-2.jpg");
+  }
+
+  &.background-3 {
+    background-image: url("../assets/img/backgrounds/port-1.jpg");
+  }
+
+  &.background-4 {
+    background-image: url("../assets/img/backgrounds/chemical-raw-material.jpg");
+  }
+}
+
+.c-first-info {
+  position: absolute;
+  left: 10%;
+  top: 45vh;
+  max-width: 300px;
+}
+
+.c-paragraph {
+  max-width: 400px;
+}
+
+.c-container-first {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.c-container-first--inside {
+  max-width: 400px;
+}
+
+.c-background-text {
+  left: 10%;
+  top: 40vh;
+}
+
+.content-section-white {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  position: relative;
+
+  &.advantage-section {
+    .x-row {
+      margin-bottom: 100px;
+    }
+  }
+
+  .c-background-text {
+    left: 10%;
+    top: 40%;
+    z-index: -1;
+  }
+
+  .x-paragraph {
+    margin-bottom: 50px;
+  }
+
+  .x-row {
+    margin-top: 50px;
+  }
+
+  .x-column-2:nth-child(1) {
+    padding:0;
+    padding-right: 50px;
+  }
+
+  .x-column-2:nth-child(2) {
+    padding:0;
+    padding-left: 50px;
+  }
+}
+
+.c-container {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1050px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.c-heading-container {
+  max-width: 460px;
+  margin: 0 auto;
+
+  .x-heading {
+    text-align: center;
+  }
+  .x-description {
+    text-align: center;
+  }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .content-section-1 {
+    align-items: flex-start;
+
+    .x-heading {
+      font-size: 36px;
+    }
+  }
+
+  .c-first-info {
+    left: 5%;
+  }
+
+  .c-container-first {
+    padding-top: calc(40px + 15vh);
+    align-items: flex-start;
+    padding-right: 20px;
+  }
+
+  .c-first-image {
+    top: 100px;
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .content-section-1 {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .x-heading, .x-description {
+      text-align: center;
+    }
+
+    .x-main-button {
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  }
+
+  .c-container-first {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .c-container-first--inside {
+    margin: 0 auto;
+  }
+
+  .c-first-info {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .content-section-white {
+    .x-column-2:nth-child(1), .x-column-2:nth-child(2) {
+      padding:0;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content-section-1 {
+    .x-heading {
+      font-size: 30px;
+    }
+  }
+}

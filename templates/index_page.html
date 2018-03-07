@@ -1,0 +1,351 @@
+{% extends "./base.html" %}
+
+{% load cms_tags staticfiles menu_tags sekizai_tags snippet_tags %}
+
+{% block body %}
+
+
+<div class="index-section-1">
+
+  <p class="i-background-text" id="i-background-text-1">
+    Chemical Partners
+  </p>
+
+  <div class="i-nav-background" id="i-nav-background">
+    <div class="i-nav-background--white-fill"></div>
+    <div class="i-nav-background--fill background-1 active"></div>
+    <div class="i-nav-background--fill background-2"></div>
+    <div class="i-nav-background--fill background-3"></div>
+    <div class="i-nav-background--fill background-4"></div>
+    <h3 class="i-header">Выберите направление</h3>
+  </div>
+
+
+
+  <div class="i-navigation">
+
+    <a href="{% page_url "supply" %}" class="i-nav-section" id="supply" transition>
+      <span class="i-nav-section--line"></span>
+      <div class="i-nav-container">
+        <div class="i-nav-heading-container">
+          <p class="i-nav-link">Поставки под ключ / со склада</p>
+        </div>
+        <p class="i-nav-description">Комплексные поставки, включающие таможенное оформление, товарный кредит, утилизацию упаковки и многое другое.</p>
+        <div class="i-nav-button">
+          <div class="i-nav-button-fill">
+            <p class="i-nav-button-fill-text">
+              Подробнее
+            </p>
+          </div>
+          <p class="i-nav-button-text">
+            Подробнее
+          </p>
+        </div>
+      </div>
+
+    </a>
+    <a href="{% page_url "logistics" %}" class="i-nav-section" id="logistics" transition>
+      <span class="i-nav-section--line"></span>
+      <div class="i-nav-container">
+        <div class="i-nav-heading-container">
+          <p class="i-nav-link">Логистические услуги</p>
+        </div>
+        <p class="i-nav-description">Организация логистики на основании собственных сервисных контрактов с ведущими транспортными операторами и морскими линиями.</p>
+        <div class="i-nav-button">
+          <div class="i-nav-button-fill">
+            <p class="i-nav-button-fill-text">
+              Подробнее
+            </p>
+          </div>
+          <p class="i-nav-button-text">
+            Подробнее
+          </p>
+        </div>
+      </div>
+    </a>
+    <a href="{% page_url "china" %}" class="i-nav-section" id="china" transition>
+      <span class="i-nav-section--line"></span>
+      <div class="i-nav-container">
+        <div class="i-nav-heading-container">
+          <p class="i-nav-link">Услуги представительства в Китае</p>
+        </div>
+        <p class="i-nav-description">Комплексная помощь в проведении бизнес-операций на территории КНР: юридический аудит, контроль качества, продвижение товаров и многое другое.</p>
+        <div class="i-nav-button">
+          <div class="i-nav-button-fill">
+            <p class="i-nav-button-fill-text">
+              Подробнее
+            </p>
+          </div>
+          <p class="i-nav-button-text">
+            Подробнее
+          </p>
+        </div>
+      </div>
+    </a>
+    <a href="/химическое-сырье" class="i-nav-section" id="chemicals" transition>
+      <div class="i-nav-container">
+        <div class="i-nav-heading-container">
+          <p class="i-nav-link">Химическое <br> сырье</p>
+        </div>
+        <p class="i-nav-description">Поставка химического сырья для Вашего бизнеса.</p>
+        <div class="i-nav-button">
+          <div class="i-nav-button-fill">
+            <p class="i-nav-button-fill-text">
+              Подробнее
+            </p>
+          </div>
+          <p class="i-nav-button-text">
+            Подробнее
+          </p>
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+
+</div>
+
+<div class="index-section-2">
+
+  <p class="i-background-text">
+    16 лет успеха
+  </p>
+
+  <div class="i-background-triangle" id="i-background-triangle-2">
+      <svg viewBox="0 0 429 439">
+        <defs>
+            <filter x="-26.0%" y="-20.7%" width="152.0%" height="150.9%" id="filter">
+                <feOffset result="shadowOffsetOuter1" dy="16"></feOffset>
+                <feGaussianBlur result="shadowBlurOuter1" stdDeviation="26" in="shadowOffsetOuter1"></feGaussianBlur>
+                <feColorMatrix values="0.01 0 0 0 0 0 0.04 0 0 0 0 0 0.05 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"></feColorMatrix>
+            </filter>
+        </defs>
+        <g filter="url(#filter)">
+            <path d="M195.450075,48.5625 C205.825075,27.8125 222.646075,27.8125 233.021075,48.5625 L375.451075,333.4205 C385.825075,354.1705 375.434075,370.9915 352.234075,370.9915 L76.2370753,370.9915 C53.0400753,370.9915 42.6460753,354.1715 53.0210753,333.4205 L195.450075,48.5625 Z" id="path"></path>
+        </g>
+        <path fill="#fff" d="M195.450075,48.5625 C205.825075,27.8125 222.646075,27.8125 233.021075,48.5625 L375.451075,333.4205 C385.825075,354.1705 375.434075,370.9915 352.234075,370.9915 L76.2370753,370.9915 C53.0400753,370.9915 42.6460753,354.1715 53.0210753,333.4205 L195.450075,48.5625 Z" id="path"></path>
+    </svg>
+  </div>
+
+  <div class="i-background-hexagon" id="i-background-hexagon-2">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 538.06 538.06"><defs><style>.cls-1{fill:none;stroke:#6597fc;stroke-miterlimit:10;stroke-width:30px;}</style></defs><title>Ресурс 1</title><g id="Слой_2" data-name="Слой 2"><g ><polygon class="cls-1" points="521.33 201.43 336.64 16.73 84.33 84.33 16.73 336.64 201.43 521.33 453.73 453.73 521.33 201.43"/></g></g></svg>
+  </div>
+
+
+  <div class="i-container" id="i-container-2">
+
+    <div class="x-heading-container">
+      <h3 class="x-heading">О компании</h3>
+      <p class="x-description">— Наши достижения и общая информация</p>
+    </div>
+
+    <div class="x-row">
+      <div class="x-column-3" id="i-column-2-1">
+        <div class="i-advantages">
+          <p class="i-advantage-header">1000+</p>
+          <p class="i-advantage">Потребителей</p>
+          <p class="i-advantage-header">400+</p>
+          <p class="i-advantage">продуктов</p>
+          <p class="i-advantage-header">10 000+</p>
+          <p class="i-advantage">Тонн месячного оборота</p>
+          <p class="i-advantage-header">9</p>
+          <p class="i-advantage">Складов по всей территории РФ</p>
+          <p class="i-advantage-header">100+</p>
+          <p class="i-advantage">Сотрудников в РФ и СНГ</p>
+        </div>
+
+      </div>
+      <div class="x-column-3">
+        <p class="i-paragraph">Химпартнеры осуществляют профессиональные поставки химического сырья для различных отраслей. За 16 лет существования Химпартнеры существенно расширили географию своего присутствия. Изначально основным направлением был импорт из Китая в Россию, сегодня сделки осуществляются более, чем в 20 странах, продукты продаются в более, чем 10 странах.</p>
+        <div class="i-secondary-button">
+          <p>Подробнее</p>
+        </div>
+      </div>
+      <div class="x-column-3" id="i-column-2-3">
+        <div class="i-fact">
+          <p class="i-fact--text">
+            Впервые в истории новой России именно ХимПартнерами были импортированы полипропилен, безводная щавелевая кислота и монохлороуксусная кислота.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+
+</div>
+
+<div class="index-section-3">
+
+
+  <p class="i-background-text">
+    Наши преимущества
+  </p>
+
+
+  <div class="i-background-triangle" id="i-background-triangle-3">
+      <svg viewBox="0 0 429 439">
+        <defs>
+            <filter x="-26.0%" y="-20.7%" width="152.0%" height="150.9%" id="filter">
+                <feOffset result="shadowOffsetOuter1" dy="16"></feOffset>
+                <feGaussianBlur result="shadowBlurOuter1" stdDeviation="26" in="shadowOffsetOuter1"></feGaussianBlur>
+                <feColorMatrix values="0.01 0 0 0 0 0 0.04 0 0 0 0 0 0.05 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"></feColorMatrix>
+            </filter>
+        </defs>
+        <g filter="url(#filter)">
+            <path d="M195.450075,48.5625 C205.825075,27.8125 222.646075,27.8125 233.021075,48.5625 L375.451075,333.4205 C385.825075,354.1705 375.434075,370.9915 352.234075,370.9915 L76.2370753,370.9915 C53.0400753,370.9915 42.6460753,354.1715 53.0210753,333.4205 L195.450075,48.5625 Z" id="path"></path>
+        </g>
+        <path fill="#fff" d="M195.450075,48.5625 C205.825075,27.8125 222.646075,27.8125 233.021075,48.5625 L375.451075,333.4205 C385.825075,354.1705 375.434075,370.9915 352.234075,370.9915 L76.2370753,370.9915 C53.0400753,370.9915 42.6460753,354.1715 53.0210753,333.4205 L195.450075,48.5625 Z" id="path"></path>
+    </svg>
+  </div>
+
+  <div class="x-container">
+    <div class="i-row">
+      <div class="x-column-2">
+        <div class="x-detail">
+          <div class="x-detail-icon" style="background-image:url(/static/main_site/assets/img/icons/icon-1.svg)"></div>
+          <p class="x-detail-heading">
+            Надежность
+          </p>
+          <p class="x-detail-paragraph">
+            Баланс между прямыми поставками и складской программой.
+          </p>
+          <p class="x-detail-paragraph">
+            Конкурентные цены на сырье от самых высокотехнологичных производителей ЮВА.
+          </p>
+          <p class="x-detail-paragraph">
+            Наличие страхового запаса химии (1-3 месяца).
+          </p>
+          <p class="x-detail-paragraph">
+            Сырье, омологированное мировыми лидерами.
+          </p>
+        </div>
+      </div>
+      <div class="x-column-2">
+        <div class="x-detail" id="i-detail-3-1">
+          <div class="x-detail-icon" style="background-image:url(/static/main_site/assets/img/icons/icon-3.svg)"></div>
+          <p class="x-detail-heading">
+            Сервис
+          </p>
+          <p class="x-detail-paragraph">
+            Организация независимых предотгрузочных инспекций.
+          </p>
+          <p class="x-detail-paragraph">
+            Скаут-сервис по работе с потенциальными поставщиками в Китае, Индии, России и других странах.
+          </p>
+          <p class="x-detail-paragraph">
+            Единый источник сырья по основной линейке химии для дезинфекции.
+          </p>
+          <p class="x-detail-paragraph">
+            Key Account Manager/One window подход для максимально удобного общения.
+          </p>
+          <p class="x-detail-paragraph">
+            Регулярные DSR для полноты информации о движении товара.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="i-row">
+      <div class="x-column-2">
+        <div class="x-detail" id="i-detail-3-2">
+          <div class="x-detail-icon" style="background-image:url(/static/main_site/assets/img/icons/icon-2.svg)"></div>
+          <p class="x-detail-heading">
+            Прозрачность
+          </p>
+          <p class="x-detail-paragraph">
+            Любые сочетания цены и условий оплаты.
+          </p>
+          <p class="x-detail-paragraph">
+            Возможность совместных поездок для проведения технического аудита производителей сырья.
+          </p>
+          <p class="x-detail-paragraph">
+            Управление программой развития производителя по итогам аудита и выданных рекомендаций.
+          </p>
+          <p class="x-detail-paragraph">
+            Агент по прямым закупкам и логистике.
+          </p>
+        </div>
+      </div>
+      <div class="x-column">
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="index-section-4">
+  <div class="x-container">
+    <div class="i-heading-container">
+      <h3 class="i-heading">Наши партнеры</h3>
+      <p class="i-description">— Нашими услугами пользуются крупнейшие компании России</p>
+    </div>
+    <div class="i-partners">
+      <div class="i-partner">
+        <img src="/static/main_site/assets/img/partners/unilever.png" alt="">
+      </div>
+      <div class="i-partner">
+        <img src="/static/main_site/assets/img/partners/michelin.png" alt="">
+
+      </div>
+      <div class="i-partner">
+        <img src="/static/main_site/assets/img/partners/heineken.png" alt="">
+
+      </div>
+      <div class="i-partner">
+        <img src="/static/main_site/assets/img/partners/lukoil.png" alt="">
+
+      </div>
+    </div>
+    <div class="i-secondary-button">
+      <p>Смотреть всех</p>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="contacts-section">
+  <div class="x-background-hexagon" id="i-background-hexagon-2">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 538.06 538.06"><defs><style>.cls-1{fill:none;stroke:#6597fc;stroke-miterlimit:10;stroke-width:30px;}</style></defs><title>Ресурс 1</title><g id="Слой_2" data-name="Слой 2"><g ><polygon class="cls-1" points="521.33 201.43 336.64 16.73 84.33 84.33 16.73 336.64 201.43 521.33 453.73 453.73 521.33 201.43"/></g></g></svg>
+  </div>
+
+
+  <div class="x-container">
+    <div class="x-row">
+      <div class="x-column-2">
+        <h6 class="x-heading">Наши контакты</h6>
+        <p class="x-description">— Мы всегда рады новым клиентам</p>
+        <div class="x-secondary-button" action="call-form">
+          <p>Оставить заявку</p>
+        </div>
+      </div>
+      <div class="x-column-2">
+
+        <div class="i-contacts-container">
+          <div class="contacts--block">
+            <p class="contacts--block--name">Телефон</p>
+            <p class="contacts--block--content">+7 (4922) 77-77-77</p>
+          </div>
+          <div class="contacts--block">
+            <p class="contacts--block--name">Почта</p>
+            <p class="contacts--block--content">mail@mail.ru </p>
+          </div>
+          <div class="contacts--block">
+            <p class="contacts--block--name">Российский офис</p>
+            <p class="contacts--block--content">{% snippet_fragment "office_address" %}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

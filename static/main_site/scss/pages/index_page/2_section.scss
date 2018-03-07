@@ -1,0 +1,160 @@
+.index-section-2 {
+  width: 100%;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .i-background-text {
+    @extend .x-background-text;
+    left: 15%;
+    top: 150px;
+    max-width: none;
+  }
+
+  .i-container {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+
+    .i-heading-container {
+      margin: 0 auto;
+      display: block;
+      max-width: 380px;
+    }
+
+    .i-heading {
+      @extend .x-heading;
+      //transform: translateX(-40px);
+    }
+
+    .i-description {
+      @extend .x-description;
+      margin-top: 15px;
+      margin-bottom: 50px;
+      //transform: translateX(-40px);
+    }
+
+    .i-paragraph {
+      @extend .x-paragraph;
+      max-width: 400px;
+    }
+
+  }
+
+  .x-row {
+    margin-top: 30px;
+
+    .x-column-3:nth-child(1) {
+      transform: translateY(20px);
+    }
+
+    .x-column-3:nth-child(1), .x-column-3:nth-child(3) {
+      padding-top: 20px;
+    }
+
+    .x-column-3 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+    }
+
+    .x-column-3:nth-child(3) {
+      justify-content: flex-end;
+    }
+  }
+
+
+  .i-secondary-button {
+    @extend .x-secondary-button;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+
+  .i-background-triangle {
+    @extend .x-background-triangle;
+    left: -200px;
+    bottom: -200px;
+    transform: rotate(20deg);
+  }
+
+  .i-background-hexagon {
+    position: absolute;
+    right: -150px;
+    bottom: 100px;
+    height: 500px;
+    width: 500px;
+  }
+
+  .i-advantages {
+    max-width: 250px;
+  }
+
+  .i-advantage-header {
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  .i-advantage {
+    @extend .x-description;
+    font-weight: 600;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .i-fact {
+    max-width: 250px;
+  }
+
+  .i-fact--text {
+    @extend .x-paragraph;
+    font-size: 13px;
+
+  }
+
+  @media screen and (max-width: 1200px) {
+    .i-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+
+
+    .x-row {
+      display: block;
+      margin-top: 70px;
+
+      .x-column-3 {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+      }
+    }
+
+    .i-advantages {
+      margin: 0 auto;
+    }
+
+    .i-advantage, .i-advantage-header, .i-fact--text {
+      text-align: center;
+    }
+
+    .i-fact {
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+
+  }
+
+
+}

@@ -1,0 +1,33 @@
+.x-background-triangle {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+
+  &.top_right {
+    top: 0;
+    right: -200px;
+    transform: rotate(55deg);
+  }
+
+  &.top_left {
+    top: 50px;
+    left: -200px;
+    transform: rotate(35deg);
+  }
+
+  &.bottom_right {
+    bottom: -100px;
+    right: -200px;
+    transform: rotate(45deg);
+  }
+
+  &.bottom_left {
+    bottom: -200px;
+    left: -200px;
+    transform: rotate(20deg);
+  }
+}
+
+.x-background-hexagon {
+  transition: all 200ms;
+}

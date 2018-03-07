@@ -1,0 +1,111 @@
+.contacts-section {
+  padding-top: 150px;
+  padding-bottom: 200px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(to right top, $gradient_color_1, $gradient_color_2);
+
+  .x-container {
+    position: relative;
+  }
+
+  .x-heading, .x-description {
+    color: #fff;
+  }
+
+  .contacts--block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    border-top: 1px solid rgba(255,255,255,.5);
+
+    &:last-child {
+      border-bottom: 1px solid rgba(255,255,255,.5);
+    }
+
+    p {
+      color: #fff;
+    }
+
+  }
+
+  .contacts--block--name {
+    width: 100px;
+    margin-right: 80px;
+    font-weight: 600;
+  }
+
+  .x-secondary-button {
+
+    margin-top: 40px;
+    max-width: 250px;
+    border-color: #fff;
+
+    p {
+      color: #fff;
+    }
+
+    &::after {
+      background: #fff;
+
+    }
+
+    &:hover {
+      p {
+        color: $main_color;
+      }
+    }
+
+  }
+
+  .x-background-hexagon {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+
+    height: 400px;
+    width: 400px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .contacts--block--name {
+      margin-right: 40px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+
+    .i-contacts-container {
+      margin-top: 50px;
+    }
+
+    .x-heading, .x-description {
+      text-align: center;
+    }
+
+    .x-secondary-button {
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .contacts--block--name {
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+    }
+
+    .contacts--block {
+      display: block;
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+
+
+}

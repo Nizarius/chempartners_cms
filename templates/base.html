@@ -1,0 +1,228 @@
+{% load cms_tags staticfiles menu_tags sekizai_tags snippet_tags %}
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{% block title %}Document {% endblock title%}</title>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant:400,500,600,700|Montserrat:300,400,500,600,700,900|Prata&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'main_site/css/style.css' %}">
+  {% render_block "css" %}
+  {% block head %}
+  {% endblock %}
+</head>
+<body>
+  {% cms_toolbar %}
+  <div class="overlay-screen" id="overlay-screen">
+    <div class="overlay-screen--background">
+
+    </div>
+
+  </div>
+
+
+  <div class="cursor-object" id="cursor-object">
+    <div class="cursor-object--fill">
+
+    </div>
+
+    <div class="cursor-object--arrow">
+
+    </div>
+  </div>
+
+  <div class="overlay-menu" id="overlay-menu">
+
+    <div class="o-background" id="o-background"></div>
+
+    <div class="o-exit-container" id="close-overlay-menu">
+      <p class="o-exit-text">Закрыть</p>
+
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-point" id="o-progress-point"></div>
+    </div>
+
+    <div class="o-container">
+      <div class="o-navigation-links">
+        <div class="o-nav-part">
+          <a href="/" class="o-nav-link">Главная</a>
+        </div>
+        <div class="o-nav-part">
+          <h5 class="o-nav-link">О компании</h5>
+        </div>
+        <div class="o-nav-part">
+          <h5 class="o-nav-link active active-link">Направления</h5>
+          <a href="{% page_url "supply" %}" class="o-link">Поставки под ключ / со склада</a>
+          <a href="{% page_url "logistics" %}" class="o-link">Логистические услуги</a>
+          <a href="{% page_url "china" %}" class="o-link">Услуги представительства в Китае</a>
+          <a href="" class="o-link">Химическое сырье</a>
+        </div>
+        <div class="o-nav-part">
+          <h5 class="o-nav-link" o-nav-target="contacts">Контакты</h5>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="main-form-screen" id="main-form-screen">
+
+
+    <div class="main-form-screen-background">
+      <p class="i-background-text">
+        Партнерство
+      </p>
+    </div>
+
+    <div class="main-form-exit" id="main-form-exit">
+      <div class="main-form-exit-cross">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <p class="main-form-exit-text">
+        Закрыть
+      </p>
+    </div>
+
+    <div class="main-form-screen-text">
+      <h6 class="main-form-heading">
+        Заявка на звонок
+      </h6>
+      <p class="main-form-description">
+        Оставьте Ваши данные, либо свяжитесь с нами по указанным контактам
+      </p>
+
+
+      <div class="main-form-contacts-block">
+        <p class="main-form-contacts-name">
+          Телефон
+        </p>
+        <p class="main-form-contacts-paragraph">
+          +7 (495) 710-86-42
+        </p>
+      </div>
+      <div class="main-form-contacts-block">
+        <p class="main-form-contacts-name">
+          Почта
+        </p>
+        <p class="main-form-contacts-paragraph">
+          mail@mail.ru
+        </p>
+      </div>
+
+    </div>
+    <div class="main-form-container">
+      <div class="main-form">
+        <div class="main-form-input-container">
+          <p>Как к Вам обращаться?</p>
+          <input type="text" placeholder="Имя и фамилия">
+        </div>
+        <div class="main-form-input-container">
+          <p>Ваша компания</p>
+          <input type="text" placeholder="Название компании">
+        </div>
+        <div class="main-form-input-container">
+          <p>Ваша рабочая почта</p>
+          <input type="text" placeholder="Электронный адрес">
+        </div>
+        <div class="main-form-input-container">
+          <p>Ваш телефон</p>
+          <input type="text" placeholder="Рабочий или мобильный">
+        </div>
+        <div class="x-secondary-button">
+          <p>Отправить</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="barba-wrapper">
+
+
+    <div class="index-floating-footer big">
+      <div class="i-container">
+        <div class="i-float-left">
+          <a href class="i-float-left--instagram">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 viewBox="0 0 169.063 169.063" style="enable-background:new 0 0 169.063 169.063;"
+            	 xml:space="preserve">
+            <g>
+            	<path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
+            		c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
+            		c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752
+            		c17.455,0,31.656,14.201,31.656,31.655V122.407z"/>
+            	<path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561
+            		C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561
+            		c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z"/>
+            	<path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78
+            		c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78
+            		C135.661,29.421,132.821,28.251,129.921,28.251z"/>
+            </g>
+            </svg>
+          </a>
+
+          <p class="i-float-text">
+            Российский офис: <br>
+            {% snippet_fragment "office_address" %}
+          </p>
+        </div>
+        <div class="i-float-center" id="call-form">
+          <p class="i-float-action-text">
+            Оставить заявку
+          </p>
+        </div>
+        <div class="i-float-right">
+          <p class="i-float-text">chempartners@propartners.ru</p>
+          <p class="i-float-text">+7 (495) 710-86-42 </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="navigation">
+      <a href="/">
+        <div class="navigation-logo"></div>
+      </a>
+      <div class="navigation-container">
+        <p class="nav-link phone" action="call-form">
+          <span class="phone-icon" type="image/svg+xml" data="/static/main_site/assets/svg/phone_white.svg" width="100" height="100" >
+
+          </span>
+          +7 (495) 710-86-42
+        </p>
+        <a class="nav-link" href="/">Главная</a>
+        <a class="nav-link"  href="">Направления</a>
+        <a class="nav-link" href="">Контакты</a>
+      </div>
+    </div>
+
+    <div class="hamburger-button" id="open-overlay-menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+
+    <div class="barba-container" id="page-content">
+
+    {% block body %}
+    {% endblock %}
+
+    {% block content %}{% endblock content %}
+
+    </div>
+  </div>
+
+  {% render_block "js" %}
+  <script src="{% static 'main_site/js/app.bundle.js' %}"></script>
+</body>
+</html>

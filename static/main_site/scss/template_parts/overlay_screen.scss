@@ -1,0 +1,27 @@
+.overlay-screen {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  overflow: hidden;
+  background: #fff;
+
+  .overlay-screen--background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+
+  }
+
+  &.ending {
+    top: auto;
+    bottom: 0;
+  }
+
+
+}

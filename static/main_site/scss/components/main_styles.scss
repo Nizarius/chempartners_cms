@@ -1,0 +1,157 @@
+.x-paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  position: relative;
+}
+
+.x-paragraph--number {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  font-size: 72px;
+  font-weight: 700;
+  color:#F6F6F6;
+  z-index: -1;
+}
+
+.x-contain {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.x-heading {
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+
+  @media screen and (max-width: 800px) {
+    font-size: 42px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 36px;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 30px;
+  }
+}
+
+.x-heading-container {
+  .x-heading, .x-description {
+    text-align: center;
+  }
+
+  .x-description {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+.x-small-heading {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.x-description {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.x-background-text {
+  position: absolute;
+  font-size: 160px;
+  line-height: 160px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F6F6F6;
+
+
+  @media screen and (max-width: 1200px) {
+    font-size: 124px;
+    line-height: 124px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    font-size: 96px;
+    line-height: 96px;
+  }
+
+  @media screen and (max-width: 800px) {
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 48px;
+    line-height:48px;
+  }
+}
+
+.x-detail {
+  position: relative;
+  width: 100%;
+  max-width: 490px;
+  padding-left: 90px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 35px;
+    top: 75px;
+    width: 1px;
+    height: 0;
+    background: #000;
+    transition: height 300ms;
+  }
+
+  &.visible {
+    &::before {
+      height: calc(100% - 90px);
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    padding-left: 0;
+  }
+
+}
+
+.x-detail-icon {
+  @extend .x-contain;
+  position: absolute;
+  position: absolute;
+  left: 0px;
+  top: -13px;
+  height: 70px;
+  width: 70px;
+
+  @media screen and (max-width: 500px) {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+  }
+}
+
+.x-detail-heading {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 500px) {
+    text-align: center;
+  }
+}
+
+.x-detail-paragraph {
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 10px;
+  position: relative;
+
+}

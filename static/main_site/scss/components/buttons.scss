@@ -1,0 +1,110 @@
+.x-main-button {
+  border-radius: 30px;
+  border: 1px solid $main_color;
+  padding: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  max-width: 250px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  -webkit-backface-visibility: hidden;
+ -moz-backface-visibility: hidden;
+ -webkit-transform: translate3d(0, 0, 0);
+ -moz-transform: translate3d(0, 0, 0);
+
+  p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    transition: all 200ms;
+  }
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    height: 100%;
+    width: 200%;
+    background: linear-gradient(to top, $gradient_color_1, $gradient_color_2);
+    transition: all ease-out 300ms;
+    transform: rotate(-15deg) scaleY(4);
+    transform-origin: right bottom;
+  }
+
+
+  &:hover {
+    p {
+      color: $main_color;
+    }
+
+    &::after {
+      transform: rotate(-15deg) scaleY(0);
+    }
+
+  }
+}
+
+.x-secondary-button {
+  border-radius: 30px;
+  border: 1px solid $main_color;
+  padding: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  max-width: 200px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  -webkit-backface-visibility: hidden;
+ -moz-backface-visibility: hidden;
+ -webkit-transform: translate3d(0, 0, 0);
+ -moz-transform: translate3d(0, 0, 0);
+
+  p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    color: $main_color;
+    position: relative;
+    z-index: 1;
+    transition: all 200ms;
+  }
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    height: 100%;
+    width: 200%;
+    background: $main_color;
+    transition: all ease-out 200ms;
+    transform: rotate(-15deg) scaleY(0);
+    transform-origin: left top;
+  }
+
+
+  &:hover {
+    p {
+      color: #fff;
+    }
+
+    &::after {
+      transform: rotate(-15deg) scaleY(3);
+    }
+
+  }
+
+}

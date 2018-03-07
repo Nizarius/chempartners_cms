@@ -1,0 +1,210 @@
+.main-form-screen {
+  position: fixed;
+  z-index: 1005;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: none;
+
+
+  &.active {
+    display: block;
+  }
+
+  .main-form-screen-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    opacity: 1;
+
+    .i-background-text {
+      @extend .x-background-text;
+      left: 0%;
+      top: 30vh;
+      transform: rotate(90deg) translateX(50vh) translateY(450px);
+    }
+  }
+
+  .main-form-exit {
+    position: absolute;
+    left: calc(50% - 50px);
+    bottom: 0;
+    height: 62.5px;
+    width: 100px;
+    padding-top: 20px;
+    cursor: pointer;
+
+    .main-form-exit-text {
+      margin: 0 auto;
+      max-width: 200px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: color 200ms;
+    }
+
+    .main-form-exit-cross {
+      position: absolute;
+      left: calc(50% - 25px);
+      top: 0px;
+      width: 50px;
+      height: 50px;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+
+      .line {
+        position: absolute;
+        left: 17.5px;
+        top:0;
+        height: 1px;
+        width: 20px;
+        background: #000;
+        transform: rotate(45deg);
+        transform-origin: left center;
+        transition: background 200ms;
+
+        &:nth-child(2) {
+          transform-origin: right center;
+          transform: rotate(-45deg) translateX(-4.3px) translateY(-4.3px);
+        }
+      }
+    }
+
+    &:hover {
+      .main-form-exit-text {
+        color: $main_color;
+      }
+
+      .main-form-exit-cross .line {
+        background: $main_color;
+      }
+    }
+  }
+
+  .main-form-screen-text {
+    position: absolute;
+    left: 5%;
+    top: 30vh;
+    right: 500px;
+
+    .main-form-heading {
+      @extend .x-heading;
+      font-size: 36px;
+    }
+
+    .main-form-description {
+      @extend .x-description;
+      margin-bottom: 30px;
+    }
+
+    .main-form-contacts-description {
+      @extend .x-paragraph;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+
+    .main-form-contacts-block {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .main-form-contacts-name {
+      @extend .x-paragraph;
+      font-size: 18px;
+      line-height: 30px;
+      width: 120px;
+      font-weight: 600;
+      margin-right: 20px;
+    }
+
+    .main-form-contacts-paragraph {
+      @extend .x-paragraph;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  .main-form-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 450px;
+    height: 100%;
+    background: #fff;
+    border-left: 1px solid #D5E2E8;
+    //box-shadow: 0 0 4px rgba(0,0,0,.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .main-form {
+    max-width: 280px;
+    width: 100%;
+  }
+
+
+  .main-form-input-container {
+    margin-bottom: 20px;
+
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 5px;
+      //padding-left: 20px;
+      color: #333;
+    }
+
+    input {
+      outline: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      -webkit-appearance: none;
+      font-size: 14px;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #F6F6F6;
+      padding: 10px;
+      padding-left: 20px;
+      //border-radius: 20px;
+
+      transition: border-color 200ms;
+
+      &:focus {
+        border-color: $main_color;
+      }
+
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #ccc;
+        font-weight: 300;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: #ccc;
+        font-weight: 300;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: #ccc;
+        font-weight: 300;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: #ccc;
+        font-weight: 300;
+      }
+    }
+  }
+
+}
